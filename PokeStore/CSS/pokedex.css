@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-spacing: 15px;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+td {
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 50px;
+
+}
+td > ul > li:nth-child(4){
+    margin-top: 5px;
+}
+article > div:nth-child(1) > input{
+    height: 10px;
+    width: 480px;
+    margin: 5px 0 10px;
+    border-radius: 50px;
+    border: 3px solid black;
+    font-size: 30px;
+    padding: 25px;
+    z-index: 1;
+}
+article > div:nth-child(1) > div{
+    margin-top: -55px;
+    margin-left: 420px;
+    height: 45px;
+    width: 45px;
+    border: 5px;
+    border-radius: 55px;
+    font-size: 30px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    z-index: 0;
+}
+select{
+    margin: 5px 0 10px;
+    border-radius: 55px;
+    height: 50px;
+    width: 480px;
+    font-size: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+}

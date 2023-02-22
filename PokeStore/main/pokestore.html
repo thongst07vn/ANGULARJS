@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>POKESTORE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+    <link rel="stylesheet" href="../CSS/pokestore.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.js"></script>
+    <script src="../JS/pokestore.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <div ng-controller="CTRL1" id="navbar">
+                <a href="#!/"><p>POKE<strong>STORE</strong></p></a>
+                <ul>
+                    <li><a href="#!/" ng-class="{active: isActive('/')}">HOME</a></li>
+                    <li><a href="#!POKEDEX" ng-class="{active: isActive('/POKEDEX')}">POKEDEX</a></li>
+                    <li><a href="#!STORE" ng-class="{active: isActive('/STORE')}">STORE</a></li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <div ng-view></div>
+        </section>
+        <footer>
+            <div>
+                <ul>
+                    <li><strong>Contact Us</strong></li>
+                    <li><strong>Address:</strong> 70, Street 6, Linh Trung Ward, Thu Duc City, Ho Chi Minh City</li>
+                    <li><strong>Hotline:</strong> 0949258999</li>
+                    <li><strong>Email:</strong> thongst07vn@gmail.com</li>
+                </ul>
+                <ul>
+                    <li><strong>Follow Us</strong></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://discord.com/" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

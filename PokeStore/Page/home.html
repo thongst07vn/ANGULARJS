@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <script src="../JS/pokestore.js" defer></script>
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+<body>
+    <section>
+        <div>
+            <video controls autoplay loop>
+                <source src="../media/home.mp4" type="video/mp4">
+            </video>
+            <div >
+                <ul ng-repeat="poke in banner">
+                    <li><img ng-src="{{poke.img}}"></li>
+                    <li class=title>{{poke.title}}</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

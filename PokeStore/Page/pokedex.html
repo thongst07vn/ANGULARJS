@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokedex</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="../JS/pokestore.js" defer></script>
+    <script src="../JS/pokedex.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.js"></script>
+    <link rel="stylesheet" href="../CSS/pokedex.css">
+
+</head>
+<body>
+    <article>
+        <div>
+            <input ng-model="searchText.name"  placeholder="search" type="text">
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <select ng-model="type">
+            <option value="num">Sắp xếp theo số thứ tự tăng dần</option>
+            <option value="-num">Sắp xếp theo số thứ tự giảm dần</option>
+            <option value="name">Sắp xếp theo tên từ a -> z</option>
+            <option value="-name">Sắp xếp theo tên từ z -> a</option>
+        </select>
+        <table>
+            <tr ng-repeat="m in y">
+                <td ng-repeat="poke in pokemon | orderBy:type | filter:searchText | limitTo:6:m ">
+                    <ul>
+                        <li><strong>#</strong>{{poke.num}}</li>
+                        <li><img src="{{poke.img}}" alt="#"></li>
+                        <li><strong>Name:</strong>{{poke.name}}</li>
+                        <li><strong>Ability:</strong>
+                            <span>{{poke.type[0]}}</span>
+                            <span>{{poke.type[1]}}</span>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </article>
+</body>
+</html>

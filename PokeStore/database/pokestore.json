@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Bulbasaur Figure",
+        "img": "../image/Bulbasaur.jpg",
+        "price": "350000"
+    },
+    {
+        "name": "Chamander Figure",
+        "img": "../image/Charmander.jpg",
+        "price": "350000"
+    },
+    {
+        "name": "Squirtle Figure",
+        "img": "../image/Squirtle.jpg",
+        "price": "350000"
+    },
+    {
+        "name": "Gengar Figure",
+        "img": "../image/Gengar.jpg",
+        "price": "400000"
+    },
+    {
+        "name": "Pikachu Figure",
+        "img": "../image/Pikachu.jpg",
+        "price": "550000"
+    },
+    {
+        "name": "Arceus Figure",
+        "img": "../image/Arceus.jpg",
+        "price": "690000"
+    },
+    {
+        "name": "Glaceon Figure",
+        "img": "../image/Glaceon.jpg",
+        "price": "450000"
+    },
+    {
+        "name": "Leafeon Figure",
+        "img": "../image/Leafeon.jpg",
+        "price": "450000"
+    },
+    {
+        "name": "Sylveon Figure",
+        "img": "../image/Sylveon.jpg",
+        "price": "450000"
+    },
+    {
+        "name": "Venusaur Figure",
+        "img": "../image/Venusaur.jpg",
+        "price": "650000"
+    },
+    {
+        "name": "Blastoise Figure",
+        "img": "../image/Blastoise.jpg",
+        "price": "650000"
+    },
+    {
+        "name": "Charizard Figure",
+        "img": "../image/Charizard.jpg",
+        "price": "650000"
+    }
+]

@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    overflow-x: hidden;
+    color: white;
+    background-color: black;
+}
+ul{
+    list-style-type: none;
+}
+a:link, a:visited{
+    color: darkgray;
+    text-decoration: none;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    background-color: rgb(204, 14, 0);
+}
+header > div:first-child li{
+    display: inline;
+    font-weight: bold;
+    border-inline-end: 2px solid darkgray;
+}
+header > div:first-child{
+    display: flex;
+    flex-wrap: nowrap;
+}
+header > div:first-child > a > p > strong{
+    font-family: 'Birch Std';
+    color: darkgray;
+    margin-bottom: 0px;
+    font-size: 60px;
+}
+header > div:first-child > ul > li:last-child{
+    border: 0;
+}
+header > div:first-child > a > p{
+    font-size: 60px;
+    font-family: 'Birch Std';
+    color: white;
+    margin: 20px 0px 0px;
+}
+header > div:first-child > ul{
+    text-align: right;
+    padding-top: 40px;
+    margin: 0px;
+    flex: 30%;
+}
+header > div:first-child > ul > a{
+    margin: 0px;
+}
+header > div:first-child > ul > li > a{
+    margin: 0px;
+    padding: 0px 30px;
+    font-size: 25px;
+    color: darkgray;
+}
+header > div:first-child > ul > li:hover{
+    cursor: pointer;
+}
+.active{
+    background-color: white;
+    color: darkgray !important;
+    padding: 20px 50px 20px!important;
+    margin: -10px !important;
+    border: 0 !important;
+    cursor: pointer;
+}
+.sticky {
+    position: fixed;
+    background-color: rgb(204, 14, 0);
+    width: 100%;
+}
+section > div{
+    margin: 0px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+footer > div{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+footer > div > ul:nth-child(1) > li > strong, footer > div > ul:nth-child(2) > li > strong{
+    color: darkgray;
+}
+footer > div > ul:nth-child(1) > li:nth-child(1), footer > div > ul:nth-child(2) > li:nth-child(1){
+    margin-bottom: 20px;
+}
+footer > div > ul:nth-child(1){
+    padding-left: 0px;
+    flex: 50%;
+}
+footer > div > ul:nth-child(2){
+    flex: 50%;
+}
+footer > div > ul:nth-child(2) > li:not(li:nth-child(1)){
+    display: inline;
+    padding: 10px 20px 0px 0px;
+}
+footer > div > ul:nth-child(2) > li > a{
+    color: darkgray;
+}

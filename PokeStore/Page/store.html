@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store</title>
+    <script src="../JS/pokestore.js" defer></script>
+    <link rel="stylesheet" href="../CSS/store.css">
+</head>
+<body>
+    <article>
+        <div>
+            <input ng-model="searchText.name"  placeholder="search" type="text">
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <select ng-model="type">
+            <option value="price">Sắp xếp theo giá tiền tăng dần</option>
+            <option value="-price">Sắp xếp theo giá tiền giảm dần</option>
+            <option value="name">Sắp xếp theo tên từ a -> z</option>
+            <option value="-name">Sắp xếp theo tên từ z -> a</option>
+        </select>
+        <table>
+            <tr ng-repeat="m in y">
+                <td ng-repeat="poke in store | orderBy:type | filter:searchText | limitTo:3:m ">
+                    <ul>
+                        <li><strong>Name: </strong>{{poke.name}}</li>
+                        <li><img ng-src="{{poke.img}}"></li>
+                        <li><strong>Price: </strong>{{poke.price|currency:"":0}} VNĐ</li>     
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <form>
+            <legend><strong>Thêm sản phẩm</strong></legend>
+            <label for="name"><strong>Name:</strong></label>
+            <input id="name" ng-model="stores.name">
+            <br/>
+            <label for="price"><strong>Price:</strong></label>
+            <input id="price" ng-model="stores.price">
+            <br/>
+            <input type="file" ng-file-select="onFileSelect($files)" ng-model="stores.img">
+            <br/>
+            <img ng-src="{{stores.img}}">
+            <br/>
+            <button ng-click="add()">Lưu</button>
+            <button ng-click="cancle()">Hủy</button>
+        </form>
+    </article>
+</body>
+</html>
